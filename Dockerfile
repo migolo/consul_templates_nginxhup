@@ -9,9 +9,9 @@ RUN curl -O -L $CT_URL && \
     mv consul-template /usr/local/bin && \
     chmod +x /usr/local/bin/consul-template
 
-ENV NGINXHUP_URL https://github.com/migolo/dockernginxhup/releases/download/v1.1.0/dockernginxhup_amd64
+ENV NGINXHUP_URL https://github.com/migolo/dockernginxhup/releases/download/v1.1.0/dockernginxhup_alpine
 RUN curl -O -L $NGINXHUP_URL && \
-    mv dockernginxhup_amd64 /usr/local/bin/dockernginxhup && \
+    mv dockernginxhup_alpine /usr/local/bin/dockernginxhup && \
     chmod +x /usr/local/bin/dockernginxhup
 
 CMD ['/usr/local/bin/consul-template']
