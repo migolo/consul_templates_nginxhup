@@ -1,2 +1,2 @@
-# consul_templates_nginxhup
-Consul templates for Nginx
+# Consul Templates and Docker Nginx Hup
+Consul templates for Nginx, it includes the [Docker Nginx HUP](https://github.com/migolo/dockernginxhup) software to send the HUP signal.
